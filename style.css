@@ -40,13 +40,35 @@ nav {
     align-items: center;
 }
 
-nav > a {
+.logo {
     font-size: 24px;
     font-weight: 700;
     text-decoration: none;
     color: var(--text-color);
 }
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
 
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.social-icons svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+.social-icons a:hover {
+    color: var(--accent-color);
+}
 nav ul {
     display: flex;
     gap: 25px;
