@@ -1,147 +1,131 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Technologies and tools Natnael Teshome is learning and using as a full-stack developer student.">
     <title>Tech Stack | Natnael Teshome</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <header>
-  <nav>
+        <nav aria-label="Main navigation">
+            <a class="logo" href="index.html">Natnael</a>
 
-    <a class="logo" href="index.html">Natnael</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tech-stack.html" aria-current="page">Tech Stack</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
 
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="tech-stack.html">Tech Stack</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+            <div class="social-icons">
+                <a href="https://github.com/nate1721"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="GitHub (opens in a new tab)">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M12 2C6.48 2 2 6.58 2 12.24c0 4.53 2.87 8.37 6.84 9.72.5.1.68-.22.68-.49v-1.7c-2.78.62-3.37-1.22-3.37-1.22-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .08 1.53 1.07 1.53 1.07.9 1.58 2.36 1.12 2.94.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.15-4.56-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.18 9.18 0 0 1 12 7.15c.85 0 1.71.12 2.51.36 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.35 4.81-4.58 5.07.36.32.68.94.68 1.9v2.58c0 .27.18.6.69.49A10.25 10.25 0 0 0 22 12.24C22 6.58 17.52 2 12 2Z"/>
+                    </svg>
+                </a>
 
-    <div class="social-icons">
-
-      <a
-        href="https://github.com/nate1721"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="GitHub"
-      >
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 2C6.48 2 2 6.58 2 12.24c0 4.53 2.87 8.37 6.84 9.72.5.1.68-.22.68-.49v-1.7c-2.78.62-3.37-1.22-3.37-1.22-.46-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .08 1.53 1.07 1.53 1.07.9 1.58 2.36 1.12 2.94.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.15-4.56-5.08 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.18 9.18 0 0 1 12 7.15c.85 0 1.71.12 2.51.36 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.35 4.81-4.58 5.07.36.32.68.94.68 1.9v2.58c0 .27.18.6.69.49A10.25 10.25 0 0 0 22 12.24C22 6.58 17.52 2 12 2Z"/>
-        </svg>
-      </a>
-
-      <a
-        href="mailto:nteshome726@gmail.com"
-        aria-label="Email"
-      >
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.5l9 5.63 9-5.63V7H3Zm18 10V9.86l-8.47 5.3a1 1 0 0 1-1.06 0L3 9.86V17h18Z"/>
-        </svg>
-      </a>
-
-    </div>
-
-  </nav>
-</header>
+                <a href="mailto:nteshome726@gmail.com" aria-label="Email Natnael">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 2v.5l9 5.63 9-5.63V7H3Zm18 10V9.86l-8.47 5.3a1 1 0 0 1-1.06 0L3 9.86V17h18Z"/>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </header>
 
     <main>
-      <section class="tech-stack">
-        <h1>My Tech Stack</h1>
+        <section class="tech-stack" aria-labelledby="tech-stack-title">
+            <h1 id="tech-stack-title">My Tech Stack</h1>
+            <p>Full-Stack JavaScript Developer</p>
 
-        <p>Full-Stack JavaScript Developer</p>
+            <div class="skills">
+                <article class="skill">
+                    <img src="images/html.png" alt="HTML logo" width="100" height="100">
+                    <h2>HTML</h2>
+                    <p>Frontend</p>
+                </article>
 
-        <div class="skills">
-          <article class="skill">
-            <img src="images/html.png" alt="HTML logo" />
-            <h2>HTML</h2>
-            <p>Frontend</p>
-          </article>
+                <article class="skill">
+                    <img src="images/css.png" alt="CSS logo" width="100" height="100">
+                    <h2>CSS</h2>
+                    <p>Frontend</p>
+                </article>
 
-          <article class="skill">
-            <img src="images/css.png" alt="CSS logo" />
-            <h2>CSS</h2>
-            <p>Frontend</p>
-          </article>
+                <article class="skill">
+                    <img src="images/javaScript.png" alt="JavaScript logo" width="100" height="100">
+                    <h2>JavaScript</h2>
+                    <p>Frontend</p>
+                </article>
 
-          <article class="skill">
-            <img src="images/javaScript.png" alt="JavaScript logo" />
-            <h2>JavaScript</h2>
-            <p>Frontend</p>
-          </article>
+                <article class="skill">
+                    <img src="images/react.png" alt="React logo" width="100" height="100">
+                    <h2>React</h2>
+                    <p>Frontend</p>
+                </article>
 
-          <article class="skill">
-            <img src="images/react.png" alt="React logo" />
-            <h2>React</h2>
-            <p>Frontend</p>
-          </article>
+                <article class="skill">
+                    <img src="images/typescript.png" alt="TypeScript logo" width="100" height="100">
+                    <h2>TypeScript</h2>
+                    <p>Programming</p>
+                </article>
 
-          <article class="skill">
-            <img src="images/typescript.png" alt="TypeScript logo" />
-            <h2>TypeScript</h2>
-            <p>Programming</p>
-          </article>
+                <article class="skill">
+                    <img src="images/node.png" alt="Node.js logo" width="100" height="100">
+                    <h2>Node.js</h2>
+                    <p>Backend</p>
+                </article>
 
-          <article class="skill">
-            <img src="images/node.png" alt="Node.js logo" />
-            <h2>Node.js</h2>
-            <p>Backend</p>
-          </article>
+                <article class="skill">
+                    <img src="images/Python.png" alt="Python logo" width="100" height="100">
+                    <h2>Python</h2>
+                    <p>Programming</p>
+                </article>
 
-          <article class="skill">
-            <img src="images/Python.png" alt="Python logo" />
-            <h2>Python</h2>
-            <p>Backend</p>
-          </article>
+                <article class="skill">
+                    <img src="images/figma.png" alt="Figma logo" width="100" height="100">
+                    <h2>Figma</h2>
+                    <p>Design</p>
+                </article>
 
-          <article class="skill">
-            <img src="images/figma.png" alt="Figma logo" />
-            <h2>Figma</h2>
-            <p>Design</p>
-          </article>
+                <article class="skill">
+                    <img src="images/vscode.png" alt="Visual Studio Code logo" width="100" height="100">
+                    <h2>VS Code</h2>
+                    <p>Development Tool</p>
+                </article>
 
-          <article class="skill">
-            <img src="images/vscode.png" alt="VS Code logo" />
-            <h2>VS Code</h2>
-            <p>Development Tool</p>
-          </article>
+                <article class="skill">
+                    <img src="images/git.png" alt="Git logo" width="100" height="100">
+                    <h2>Git</h2>
+                    <p>Version Control</p>
+                </article>
 
-          <article class="skill">
-            <img src="images/git.png" alt="Git logo" />
-            <h2>Git</h2>
-            <p>Version Control</p>
-          </article>
+                <article class="skill">
+                    <img src="images/github.png" alt="GitHub logo" width="100" height="100">
+                    <h2>GitHub</h2>
+                    <p>Development Tool</p>
+                </article>
 
-          <article class="skill">
-            <img src="images/github.png" alt="GitHub logo" />
-            <h2>GitHub</h2>
-            <p>Development Tool</p>
-          </article>
-
-          <article class="skill">
-            <img src="images/lovable.png" alt="Lovable logo" />
-            <h2>Lovable</h2>
-            <p>AI Tool</p>
-          </article>
-        </div>
-      </section>
+                <article class="skill">
+                    <img src="images/lovable.png" alt="Lovable logo" width="100" height="100">
+                    <h2>Lovable</h2>
+                    <p>AI Tool</p>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer>
-      <p>Designed and built by Natnael Teshome</p>
+        <p>Designed and built by Natnael Teshome</p>
     </footer>
-  </body>
+</body>
 </html>

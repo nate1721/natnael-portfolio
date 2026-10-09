@@ -15,6 +15,7 @@
 
 :root {
     --background-color: #ffffff;
+    --surface-color: #ffffff;
     --text-color: #42446e;
     --accent-color: #5a67d8;
 }
@@ -96,13 +97,27 @@ footer {
    Home
 ========================= */
 
+
 .hero {
-    min-height: 80vh;
+    min-height: auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
-    padding: 40px 12%;
+    gap: 32px;
+    padding: 40px 5% 60px;
+    text-align: center;
 }
+
+.hero {
+    padding-bottom: 80px;
+}
+
+footer {
+    padding: 30px 15px;
+    font-size: 14px;
+}
+
 
 .hero-text {
     max-width: 600px;
@@ -268,7 +283,7 @@ footer {
 
 .project-card {
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: var(--surface-color);
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
@@ -535,4 +550,12 @@ input:focus-visible,
 textarea:focus-visible {
     outline: 3px solid var(--accent-color);
     outline-offset: 4px;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #191919;
+        --surface-color: #242424;
+        --text-color: #ffffff;
+        --accent-color: #5a67d8;
+    }
 }
