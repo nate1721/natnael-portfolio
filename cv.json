@@ -1,0 +1,56 @@
+
+{
+  "workExperience": [
+    {
+      "role": "Courier Driver",
+      "company": "Company van, electric vehicle",
+      "location": "Sweden",
+      "period": "10/2025 – Present"
+    },
+    {
+      "role": "Warehouse Associate",
+      "company": "KICKS GROUP",
+      "location": "Stockholm, Rosersberg",
+      "period": "03/2024 – Present"
+    },
+    {
+      "role": "Truck operator",
+      "company": "SMD Logistics",
+      "location": "Stockholm",
+      "period": "09/2023 – 11/2023"
+    },
+    {
+      "role": "Order Handler",
+      "company": "Coop",
+      "location": "Kungsängen, Bro",
+      "period": "09/2023 – 01/2024"
+    },
+    {
+      "role": "Sales Assistant",
+      "company": "Not specified",
+      "location": "Addis Ababa, Ethiopia",
+      "period": "08/2017 – 12/2017"
+    }
+  ],
+  
+  "education": [
+    {
+      "title": "Full-Stack Developer",
+      "school": "Chas Academy",
+      "location": "Stockholm",
+      "period": "2026 – Present"
+    },
+    {
+      "title": "International Baccalaureate (IB)",
+      "school": "Åva Gymnasium",
+      "location": "Stockholm",
+      "period": "11/2022 – 04/2023"
+    },
+    {
+      "title": "Cambridge A Level",
+      "school": "International IT College of Sweden",
+      "location": "Stockholm",
+      "period": "08/2022 – 11/2022"
+    }
+  ]
+}

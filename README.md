@@ -1,98 +1,103 @@
-# Natnael Teshome — Portfolio
+# My Developer Portfolio
+
+Hi! I'm Natnael, a full-stack developer student at Chas Academy.
+
+This is my portfolio website, built as part of my individual JavaScript assignment. It introduces me, presents my skills and experience, and showcases my projects. I built it using HTML, CSS, JavaScript, and JSON.
 
 ## Live Website
 
-[View my portfolio](https://nate1721.github.io/natnael-portfolio/)
+[Visit my portfolio](https://nate1721.github.io/natnael-portfolio/)
 
-## Project Overview
+## Pages
 
-This project is a personal portfolio website created as part of my Full-Stack Developer studies at Chas Academy. The website presents information about me, my education and work experience, my technical skills, selected projects, and contact information.
+- **Home:** An introduction to me.
+- **About:** My background, education, and work experience.
+- **Tech Stack:** The technologies and tools I'm learning.
+- **Projects:** Selected projects fetched from GitHub's API.
+- **Contact:** Information on how to get in touch with me.
 
-The portfolio consists of five pages:
+## Technologies
 
-- Home
-- About
-- Tech Stack
-- Projects
-- Contact
+- HTML
+- CSS
+- JavaScript (ES2024+)
+- JSON
+- Fetch API
+- DOM manipulation
+- Git and GitHub
 
-The website was built using HTML and CSS with a focus on responsive design, accessibility, and a clean user interface.
+## Features
 
-## From Figma to Code
+- Responsive layout for desktop and mobile.
+- Mobile navigation menu.
+- Light and dark themes.
+- CV generated from a separate JSON file.
+- Project information retrieved from GitHub's API.
+- Loading and error messages when fetching projects.
+- An empty state when no projects are available.
+- Interactive profile image animation.
 
-I used the provided Figma design as the visual foundation for the website. I first studied the layout, spacing, typography, navigation and overall structure before translating the design into HTML and CSS.
+## Reflection
 
-I kept the overall visual style of the original design while replacing the original content with my own information. I also adapted the content to represent me as a Full-Stack JavaScript Developer.
+### 1. Data flow: GitHub API
 
-The website uses a shared navigation and consistent styling across all pages to create a coherent experience.
+On the Projects page, JavaScript uses `fetch()` to request repository information from GitHub's API. The browser sends an HTTP request, and GitHub responds with a status code and JSON data. My code checks whether the response was successful before converting it into JavaScript data using `response.json()`.
 
-## HTML Structure
+The code then reads each repository's name, description, and URL. It creates HTML elements using DOM methods and inserts them into the page. This means the project cards are generated from the API response instead of being written directly into the HTML.
 
-I used semantic HTML elements such as:
+### 2. Two data sources
 
-- `<header>`
-- `<nav>`
-- `<main>`
-- `<section>`
-- `<article>`
-- `<footer>`
+My CV information is stored in `cv.json`, which I control and can update myself. JavaScript reads this file and generates the education and work experience sections.
 
-These elements help structure the content clearly and make the website easier to understand and maintain.
+The projects come from GitHub's API. Unlike my local JSON file, this information depends on an external service and can change when repositories are updated. The API request can also fail because of network problems or an unavailable repository. This is why the two data sources need different handling.
 
-Each page has its own purpose while sharing the same navigation and footer.
+### 3. DOM manipulation and events
 
-## Layout and Responsiveness
+I use JavaScript to create elements, add content, set attributes, and insert elements into the page. This allows the CV and project information to be generated dynamically.
 
-I used both CSS Flexbox and Grid to create the layouts.
+I also use event listeners for interactions such as opening the mobile menu, changing the theme, and triggering the profile image animation. Event listeners let the page respond to user actions instead of remaining static.
 
-CSS Grid is used for areas such as the Tech Stack and Projects sections, while Flexbox is used for the navigation, hero section and other layouts.
+### 4. Semantic HTML and accessibility
 
-The website uses responsive design with a dedicated mobile breakpoint at 700px. On smaller screens, the navigation wraps, the project cards change to a single-column layout, and the Tech Stack changes from five columns to two columns.
+I use semantic HTML elements to give the page a clear structure. When JavaScript generates content, I create elements such as headings, paragraphs, articles, and links instead of placing everything inside generic containers.
 
-I tested the pages at different screen sizes to make sure the content remains usable without horizontal scrolling.
+I also use accessible labels for interactive controls and consider keyboard navigation and reduced-motion preferences. These details matter because a website should be usable by people who navigate differently, not only by visitors using a mouse.
 
-## Accessibility
+Before submitting, I will validate the HTML and test the interactive features using a keyboard.
 
-Accessibility was considered throughout the development process.
+### 5. Light and dark themes
 
-Images have descriptive `alt` text, navigation links have clear names, and interactive elements have visible keyboard focus styles.
+The theme is controlled through CSS and JavaScript. CSS variables keep the colours in one place, while JavaScript changes a class to activate the selected theme. This makes the theme easier to maintain because I can update colours in CSS without adding individual colour values throughout the JavaScript.
 
-I also considered text contrast and tested the website using keyboard navigation.
+I also use `localStorage` to remember the visitor's theme preference between visits in the same browser.
 
-I checked the HTML using the W3C Markup Validation Service. All five HTML pages passed validation with zero errors.
+### 6. Handling problems during data fetching
 
-## Design and User Experience
+While GitHub data is loading, the page displays a loading message so the visitor knows that something is happening. If the request fails, the page displays an error message rather than leaving the visitor with a blank section.
 
-I kept the design simple and consistent by using the same typography, colors, spacing and navigation throughout the website.
+I also added an empty-state check for situations where there are no projects to display. These states make the page easier to understand when something unexpected happens.
 
-I used CSS variables for the main colors so they can be changed easily in one place. Google Fonts is used for consistent typography.
+A slow response can still delay the results, so one improvement would be to add a timeout or another way to handle requests that take too long.
 
-The project cards use images, descriptions and technology information to make the projects easy to scan.
+### 7. Strengths and improvements
 
-The navigation provides a consistent way to move between the different pages.
+One strength of my portfolio is that it separates content from presentation and uses JavaScript to generate dynamic content. The website also has responsive layouts and interactive features.
 
-## Strengths and Weaknesses
+If I had more time, I would improve the data-fetching logic so it could handle individual repository failures more gracefully. I would also expand my accessibility testing, particularly keyboard navigation and colour contrast, to make sure the whole website is usable.
 
-One strength of the project is its consistent visual design across all pages. The responsive layouts also make the website usable on both desktop and mobile screens.
+### 8. Use of AI tools
 
-Another strength is the clear structure of the HTML and the use of reusable CSS rules.
+I used ChatGPT to help me understand JavaScript, review code, and identify possible improvements. I did not treat generated code as automatically correct. I reviewed the suggestions, adapted them to my project, and tested the functionality in the browser.
 
-One weakness is that some of the projects shown on the Projects page are currently portfolio concepts rather than fully developed applications.
+Using AI helped me work through problems, but I still need to understand how the code works so I can explain and maintain it independently.
 
-Another area I could improve in the future is adding more interactive functionality with JavaScript and connecting the contact section to a real form service or backend.
+## How to Run Locally
 
-## AI Usage
+1. Clone this repository.
+2. Open the project folder in VS Code.
+3. Use the Live Server extension to run `index.html`.
 
-I used AI as a learning and development support tool during the project.
+## Author
 
-AI helped me understand HTML and CSS concepts, troubleshoot layout problems, improve responsive design, and review parts of my code. I also used AI to help structure some of the content and generate ideas for the project section.
-
-I did not use AI as a replacement for understanding the code. I tested the code myself in the browser, made changes in VS Code, and checked the final HTML using the W3C validator.
-
-Using AI in this way helped me solve problems while continuing to learn how the code works.
-
-## Conclusion
-
-This project gave me practical experience turning a visual design into a responsive website. I worked with semantic HTML, CSS Grid, Flexbox, responsive design, accessibility, images, Google Fonts and Git.
-
-The project also helped me understand the importance of testing a website at different screen sizes and validating the final HTML before deployment.
+**Natnael Teshome**  
+Full-stack developer student at Chas Academy.
