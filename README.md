@@ -63,8 +63,6 @@ I use semantic HTML elements to give the page a clear structure. When JavaScript
 
 I also use accessible labels for interactive controls and consider keyboard navigation and reduced-motion preferences. These details matter because a website should be usable by people who navigate differently, not only by visitors using a mouse.
 
-Before submitting, I will validate the HTML and test the interactive features using a keyboard.
-
 ### 5. Light and dark themes
 
 The theme is controlled through CSS and JavaScript. CSS variables keep the colours in one place, while JavaScript changes a class to activate the selected theme. This makes the theme easier to maintain because I can update colours in CSS without adding individual colour values throughout the JavaScript.
